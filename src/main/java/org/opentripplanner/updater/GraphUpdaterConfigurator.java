@@ -134,6 +134,9 @@ public abstract class GraphUpdaterConfigurator {
                 else if (type.equals("siri-lite-vm-updater")) {
                     updater = new SiriLiteVMUpdater();
                 }
+                else if (type.equals("stif-siri-lite-et-updater")) {
+                    updater = new STIFSiriLiteETUpdater();
+                }
             }
 
             // Configure and activate the new updater.
