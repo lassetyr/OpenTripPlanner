@@ -102,7 +102,7 @@ public class STIFSiriLiteETHttpTripUpdateSource implements EstimatedTimetableSou
     private Siri parseStifJson(InputStream is) {
         JsonParser jsonParser = new JsonParser();
         JsonObject jsonServiceDelivery = jsonParser.parse(new InputStreamReader(is))
-                .getAsJsonObject().get("Siri")
+                .getAsJsonObject().get("siri")
                 .getAsJsonObject().getAsJsonObject("serviceDelivery");
 
         JsonArray estimatedTimeTableDeliveries = jsonServiceDelivery.getAsJsonArray("estimatedTimetableDelivery");
